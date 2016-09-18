@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="pop.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  	<title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<style type="text/css">
+</style>
+<body class="ibora">
+  <div class="left-nav ti-l"> 
+     <div class="nav-sect-cont">
+       <ul>
+          <div class="t">
+         	  <li class="nav-sect"> 
+              <div class="logo-cont">
+              </div>   
+              <div class="word-cont txt-center">
+                This is about us.
+              </div>
+            </li>
+            <li class="nav-sect">
+              <div class="menu-cont">
+                 <ul>
+                   <li> <a href="home.html"> HOME    </a></li>
+                   <li> <a href="about.html"> ABOUT   </a></li>
+                   <li> <a href="contact.html"> CONTACT </a></li>
+                 </ul>
+              </div>
+            </li>
+            <style type="text/css">
+              .add_new{
+                background: green;width:100%;color:white;
+              }
+            </style>
+            <div class="nav-sect-divider"></div>
+            <li class="my_account">ABDULMALIK </li>
+            <div class="nav-sect-divider"></div>
+            <li class="nav-sect fav-sect nav-fav">
+               <div class="ttl-2" title="Show All">
+               <a href="#">FAVOURITES</a></div>
+               <ul>
+                 <li>McAngel</li>
+                 <li>Ade</li>
+                 <li>Basketmouth</li>
+                 <li>AY</li>
+                 <li>Jenifa</li>
+                 <div class="sp"><a href="#">.....</a></div>
+               </ul>
+            </li>
+            <div class="nav-sect-divider"></div>
+            <li class="nav-sect fav-sect nav-pop">
+               <div class="ttl-2">
+               <a href="#">POPULAR</a>
+               </div>
+               <ul>
+                 <li>McAngel</li>
+                 <li>Ade</li>
+                 <li>Basketmouth</li>
+                 <li>AY</li>
+                 <li>Jenifa</li>
+               </ul>
+            </li>
+            <div class="nav-sect-divider"></div>
+          </div>
+          <div class="b">
+            <li class="nav-sect foot-sect">
+               <ul>
+                 <li>FB</li>
+                 <li>IG</li>
+                 <li>TW</li>
+               </ul>
+               <div> Site @ 2016</div>
+            </li>
+          </div>
+       </ul>
+     </div>
+  </div>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $('.type-div ul li').click(function(){
+          $('.type-div ul li').removeClass('active');
+          $(this).addClass('active');
+       });
+    
+       $('.sort-div ul li').click(function(){
+          $('.sort-div ul li').removeClass('active');
+          $(this).addClass('active');
+       });
+    });
+  </script>
+  <div class="right-cont ti-r">
+   <div class="home-main-cont">
+
+    <div class="sort-div"> 
+      <div class="l">
+      <!--span style="float:left;">Sort By:</span>
+      <ul>
+        <li> Relevance </li>
+        <li class="active"> Popularity </li>
+        <li> Date </li>
+      </ul-->
+      </div>
+      <div class="r">
+        <input type="text" name="" placeholder="Search">
+        <button class="go-btn">GO</button>
+      </div>
+    </div>
+    <style type="text/css">
+      .view_cont{
+        width:100%;
+        display:table;padding-bottom: 50px;
+        min-height: 700px;
+      }
+      .view_cont .left{
+        width:64.8%;height:500px;bakground: white;
+        float: left;margin-right: 1%;
+      }
+      .view_cont .right{
+        min-height: 500px;width:29%;background: white;float:left;
+        padding-bottom: 50px;
+      }
+      .view-box{
+        background: red;height:400px;
+      }
+      .view-dtls{
+         min-height: 100px;background: white;margin-top: 5px;
+        padding:5px;
+      }
+      .view-dtls .name{
+         height: 30px;
+         font-size: 20px;font-weight: 500;
+         color: #444;font-family: Candara
+      }
+      .view-dtls .author{
+        height:52px;
+      }
+      .other{
+        border-top:1px solid #ddd;
+      }
+      .view-dtls ul li{
+        display: inline-block;float: left;
+        margin-right:5px;
+      }
+      .view-dtls ul li.thmb{
+        height:49px;width:49px;background: red;
+      }
+      .view-comments{
+        background: white;min-height: 200px;
+        margin-top:5px;
+      }
+      .recommended-cont{
+        padding-top:10px;
+      }
+      .recommended-cont ul li{
+        margin:0 auto;backgrund: red;height:110px;margin-bottom: 3px;
+        width:97%;padding-bottom: 1px;border-bottom: 1px solid #eee;
+      }
+      .recommended-cont .l{
+        height:100px;width:48%;background: red;
+        float: left;
+      }
+      .recommended-cont .r{
+        height:100px;width:50%;
+        float: left;padding-left: 1%;
+      }
+    </style>
+    <div class="view_cont">
+      <div class="left"> 
+        <div class="view-box">
+          
+        </div>
+        <div class="view-dtls">
+           <div class="name">   Title of the video here</div>
+           <div class="author"> 
+             <ul>
+               <li class="thmb"></li>
+               <li> McAngel</li>
+               <li></li>
+             </ul>
+           </div>
+           <div class="other">  </div>
+        </div>
+        <div class="view-comments">
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="recommended-cont">
+           <ul>
+             <li> <div class="l"> </div> <div class="r">Related video title </div> </li>
+             <li> <div class="l"> </div> <div class="r">Related video title </div> </li>
+             <li> <div class="l"> </div> <div class="r">Related video title </div> </li>
+             <li> <div class="l"> </div> <div class="r">Related video title </div> </li>
+           </ul>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+    <div class="profile-cont" style="display:none;">
+
+    </div>
+    <div class="favorites-cont" style="">
+        <div class="ttl-3 txt-center"> FAVOURITE CHANNELS</div>
+            <div class="nav-sect-divider"></div>
+        <div class="favorites-list">
+               <ul>
+                 <li>McAngel  <span class="close"> x </span></li>
+                 <li>Ade  <span class="close"> x </span></li>
+                 <li>Basketmouth  <span class="close"> x </span></li>
+                 <li>AY  <span class="close"> x </span></li>
+                 <li>Jenifa  <span class="close"> x </span></li>
+                  <li>Basketmouth  <span class="close"> x </span></li>
+                 <li>AY  <span class="close"> x </span></li>
+                 <li>Jenifa  <span class="close"> x </span></li>
+              </ul>
+
+        </div>
+    </div>
+  </div>
+</body>
+</html>d
